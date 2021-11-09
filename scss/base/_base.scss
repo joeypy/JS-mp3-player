@@ -1,0 +1,129 @@
+/*============================== BASE =================================*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $body-font;
+    font-size: $smaller-font-size;
+    background-color: $body-color;
+    color: $text-color;
+    
+}
+
+.player {
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+    text-align: center;
+
+    &__container {
+        width: 400px;
+        height: 500px;
+        margin: 0 auto;
+        background: $container-color;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+    }
+    
+    &__img {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        top: -50px;
+        left: 50px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+        }
+    }
+
+    &__title {
+        font-size: 25px;
+        margin: 0;
+        color: $text-color;
+    }
+      
+    &__artist {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 5px 0 0;
+        color: $text-color;
+    }
+
+    &__progress-container {
+        background: $bg-color;
+        width: 90%;
+        height: 4px;
+        margin: 40px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        .progress {
+            background: $progress-color;
+            border-radius: 5px;
+            height: 100%;
+            width: 0%;
+            transition: width 0.1s linear;
+
+            &__wrapper { 
+                position: relative;
+                top: -25px;
+                display: flex;
+                justify-content: space-between;
+            }
+            &:active,
+            &:focus,
+            &:focus:active {
+                background-image: none;
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__controls {
+        position: relative;
+        top: -15px;
+        left: 20px;
+        width: 200px;
+        margin: 0 auto;
+
+        .fas {
+            font-size: 30px;
+            color: rgb(129, 129, 129);
+            margin-right: 30px;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                filter: brightness(80%);
+            }
+            &:active {
+                transform: scale(90%);
+            }
+            &:active,
+            &:focus,
+            &:focus:active {
+              background-image: none;
+              outline: 0;
+              box-shadow: none;
+            }
+
+        }
+
+        .main-button {
+            font-size: 40px;
+            position: relative;
+            top: 5px;
+        }
+    }
+
+
+}

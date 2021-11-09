@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=docplayer.net">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Player -->
+    <div class="player">
+        <div class="player__container">
+            <div class="player__img">
+                <img src="./img/my_world.jpg" alt="Avril Lavigne - Let go">
+            </div>
+            <h2 class="player__title" id="title">Complicated</h2>
+            <h3 class="player__artist" id="artist">Avril Lavigne</h3>
+            <audio src="./music/complicated.mp3" id="audio"></audio>
+            <!-- Progress -->
+            <div class="player__progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="progress__wrapper">
+                    <span class="progress__current-time" id="current-time">0:00</span>
+                    <span class="progress__duration" id="duration">4:05</span>
+                </div>
+            </div>
+            <!-- Controls Buttons -->
+            <div class="player__controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main-button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+            <!-- <i class="fas fa-sync-alt playing-icon"></i> -->
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

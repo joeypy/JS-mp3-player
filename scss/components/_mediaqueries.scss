@@ -1,0 +1,21 @@
+/*============================== MEDIA QUERY =================================*/
+// For small device
+@media screen and (max-width: 375px) {
+    .player {
+        &__container {
+            width: 90vw;
+            height: 470px;
+    
+        }
+        &__img {
+            left: 33px;
+            width: 260px;
+            height: 260px;
+        }
+    }
+}
+
+// For large devices
+@media  screen and (min-width: 968px) {
+   
+}

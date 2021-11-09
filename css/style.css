@@ -1,0 +1,289 @@
+/*============================== GOOGLE FONTS =================================*/
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
+/*============================== VARIABLES CSS =================================*/
+/*============== Colors ===================*/
+/*============== Fonts and Typography ===================*/
+/*============================== BASE =================================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Spartan, sans-serif;
+  font-size: 0.7rem;
+  background-color: #c9ced3;
+  color: #1a1a1a;
+}
+
+.player {
+  display: grid;
+  align-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.player__container {
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0 16px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.player__img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+.player__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 16px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.player__title {
+  font-size: 25px;
+  margin: 0;
+  color: #1a1a1a;
+}
+.player__artist {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 5px 0 0;
+  color: #1a1a1a;
+}
+.player__progress-container {
+  background: #fff;
+  width: 90%;
+  height: 4px;
+  margin: 40px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.player__progress-container .progress {
+  background: #333232;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.player__progress-container .progress__wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+.player__progress-container .progress:active, .player__progress-container .progress:focus, .player__progress-container .progress:focus:active {
+  background-image: none;
+  outline: 0;
+  box-shadow: none;
+}
+.player__controls {
+  position: relative;
+  top: -15px;
+  left: 20px;
+  width: 200px;
+  margin: 0 auto;
+}
+.player__controls .fas {
+  font-size: 30px;
+  color: #818181;
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+.player__controls .fas:hover {
+  filter: brightness(80%);
+}
+.player__controls .fas:active {
+  transform: scale(90%);
+}
+.player__controls .fas:active, .player__controls .fas:focus, .player__controls .fas:focus:active {
+  background-image: none;
+  outline: 0;
+  box-shadow: none;
+}
+.player__controls .main-button {
+  font-size: 40px;
+  position: relative;
+  top: 5px;
+}
+
+/*============================== LAYOUT =================================*/
+/* Row and columns systems */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+[class*=col-] {
+  padding: 0 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* MEDIUM SCREEN */
+@media only screen and (max-width: 1280px) {
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+/* SMALL SCREEN */
+@media only screen and (max-width: 500px) {
+  .col-sm-1 {
+    width: 8.33%;
+  }
+
+  .col-sm-2 {
+    width: 16.66%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    width: 33.33%;
+  }
+
+  .col-sm-5 {
+    width: 41.66%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    width: 58.33%;
+  }
+
+  .col-sm-8 {
+    width: 66.66%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-10 {
+    width: 83.33%;
+  }
+
+  .col-sm-11 {
+    width: 91.66%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+/*============================== MEDIA QUERY =================================*/
+@media screen and (max-width: 375px) {
+  .player__container {
+    width: 90vw;
+    height: 470px;
+  }
+  .player__img {
+    left: 33px;
+    width: 260px;
+    height: 260px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

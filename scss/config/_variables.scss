@@ -1,0 +1,39 @@
+/*============================== GOOGLE FONTS =================================*/
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+/*============================== VARIABLES CSS =================================*/
+
+/*============== Colors ===================*/
+$hue-color: 225;
+
+$first-color: hsl($hue-color, 48%, 35%);
+$title-color: hsl($hue-color, 48%, 22%);
+$text-color: hsl(0, 0%, 10%);
+
+$body-color: hsl(210, 10.2%,80.8%);
+$container-color: hsl(0, 0%, 95%);
+$bg-color: #fff;
+$progress-color: hsl(0,1%,19.8%);
+
+
+$sidebar-width: 300px;
+$border-radius: 20px;
+$topnav-height: 110px;
+$box-shadow: 0 16px 30px 5px rgba(0,0,0, 0.3);
+$box-shadow-img: 0 5px 30px 5px rgba(0,0,0, 0.5);
+$transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+/*============== Fonts and Typography ===================*/
+$body-font: Spartan, sans-serif;
+
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .7rem;
+
+
+
+@media screen and (min-width: 968px) {
+    $normal-font-size: 1rem;
+    $small-font-size: .875rem;
+    $small-font-size: .813rem;
+}
+
